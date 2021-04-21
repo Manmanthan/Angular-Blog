@@ -1,0 +1,18 @@
+<div class="col-sm-8 my-auto mx-auto mt-5">
+
+    <h1 class="page-header">Personal Details</h1>
+
+    <!-- Custom Success/Error Message -->
+    <div class="row show-hide-message" *ngIf="message">
+        <div [ngClass]="messageClass">
+            {{ message }}
+        </div>
+    </div>
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Username: {{username}}</mat-card-title>
+            <mat-card-subtitle>Email: {{ email }}</mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
+</div>
